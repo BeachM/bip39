@@ -3142,11 +3142,19 @@
                 setHdCoin(545);
             },
         },
-    {
+       {
           name: "SLS - Salus",
           onSelect: function() {
               network = libs.bitcoin.networks.salus;
               setHdCoin(63);
+            },
+        },
+        {
+            name: "QTUM - Qtum (Ledger Live)",
+            segwitAvailable: false,
+            onSelect: function() {
+               network = libs.bitcoin.networks.qtum;
+               setHdCoin(88);
             },
         },
         {
